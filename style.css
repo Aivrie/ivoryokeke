@@ -1,0 +1,209 @@
+/* RESET STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url(./fonts/vollkorn/Vollkorn-Regular.ttf);
+    font-family: 'Vollkorn';
+}
+
+a {
+    /* text-decoration: none; */
+    color: #090a0a;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+a:hover {
+    /* color: #009fa1; */
+    transition: 0.3s ease;
+}
+
+/* BODY */
+
+body {
+    font-size: 18px;
+    font-family: 'Vollkorn';
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+}
+
+p {
+    
+}
+
+/* NAVIGATION */
+
+#nav-desk {
+    display: none;
+}
+
+#nav-mobi {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #090a0a;
+}
+
+#nav-mobi .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: bottom;
+}
+
+/* #nav-mobi ul {
+    background-color: white;
+} */
+
+#nav-mobi ul li {
+    padding: 10px 0px;
+}
+
+#nav-mobi ul li i {
+    color: white;
+}
+
+#nav-mobi .logo{
+    display: none;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/* PAGE WRAPPER */
+.page-wrapper {
+    margin: 3rem 3rem 7rem 3rem;
+
+}
+
+/* PAGE CONTENT */
+.page-content {
+    margin: 20px 0px;
+}
+
+.page-title {
+    font-size: 2rem;
+}
+
+/* PROJECTS */
+.project {
+    margin-bottom: 50px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #009fa1;
+}
+
+.project-body {
+    margin: 10px 0px 10px 0px;
+}
+
+/* RESUME */
+
+.resume {
+    margin-bottom: 30px;
+}
+
+.resume-body {
+    margin-bottom: 40px;
+}
+
+.position {
+    margin-bottom: 15px;
+}
+
+/* SOCIAL LINKS */
+.link-wrapper {
+    margin-top: 10px;
+}
+
+.social-links i {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+.social-links i a {
+    /* color: #070a0a; */
+}
+
+.social-links i a:hover {
+    /* color: #009fa1; */
+}
+
+
+
+/* MEDIA QUERIES */
+@media(min-width: 768px){
+
+    /* NAVIGATION */
+    #nav-mobi {
+        display: none;
+    }
+
+    
+    #nav-desk {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 120px;
+
+    }
+    
+    #nav-desk ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #nav-desk ul li {
+        margin-left: 20px;
+    }
+
+    /* PAGE WRAPPER */
+    .page-wrapper {
+        padding: 0px 100px;
+    }
+
+    /* PAGE CONTENT */
+    .page-title {
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+
+    /* PROJECTS */
+    .project-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .project-title {
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+
+    .project {
+        width: 45%;
+    }
+
+    /* RESUME */
+    .resume-body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .resume-body .content {
+        flex-basis: 50%;
+    }
+
+}
